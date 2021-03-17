@@ -1,4 +1,5 @@
 import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem';
+import PropTypes from 'prop-types';
 
 const ImageGallary = ({ children, onShowModal }) => {
   return (
@@ -9,5 +10,10 @@ const ImageGallary = ({ children, onShowModal }) => {
     </ul>
   );
 };
+
+ImageGallary.propTypes = {
+  children: PropTypes.array,
+  onShowModal: PropTypes.func,
+}
 
 export default ImageGallary;
